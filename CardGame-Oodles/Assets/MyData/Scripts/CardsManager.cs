@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CardsManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    #region Variables
     public Sprite[] faceCards; 
     public GameObject cardPrefab, mainPos, p1pos1, p1pos2, p2pos1, p2pos2;
     public List<GameObject> Cards, p1Cards, p2Cards;
-
+    #endregion
 
     void Start()
     {

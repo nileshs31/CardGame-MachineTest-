@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
+    #region Variables
     // Start is called before the first frame update
     CardsManager cardMan;
     public Animator CamAnim;
@@ -18,6 +19,7 @@ public class LevelManager : MonoBehaviour
     public Image TimerImage;
     public int v1 = 0, v2 = 0;
     float timeLeft = 60;
+    #endregion
 
     void Start()
     {
@@ -223,6 +225,7 @@ public class LevelManager : MonoBehaviour
 
             if (timeLeft <= 0)
             {
+                StopAllCoroutines();
                 GameOver();
             }
         }
